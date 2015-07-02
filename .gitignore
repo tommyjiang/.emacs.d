@@ -1,0 +1,13 @@
+/.DS_Store
+/.org-id-locations
+/abbrev_defs
+/ac-comphist.dat
+/auto-save-list/
+/bookmarks
+/contrib/
+/elpa/
+/org-clock-save.el
+recentf
+*.pem
+*.swp
+/ido.last
