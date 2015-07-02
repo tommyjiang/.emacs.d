@@ -1,13 +1,12 @@
 ; Load evil mode
-; (add-to-list 'load-path "~/.emacs.d/plugins/evil")
-; (require 'evil)
 (evil-mode 1) 
 
 ; Set evil mode of each mode 
 (evil-set-initial-state 'calendar-mode 'emacs)
 (evil-set-initial-state 'inferior-ess-mode 'emacs)
 (evil-set-initial-state 'ess-watch-mode 'emacs)
-(evil-set-initial-state 'git-commit-mode 'insert)
+(evil-set-initial-state 'text-mode 'insert)
+(evil-set-initial-state 'magit-popup-mode 'emacs)
 (evil-set-initial-state 'gnuplot-comint-mode 'emacs)
 
 (add-to-list 'auto-mode-alist '("\\.gnu\\'" . gnuplot-mode))
