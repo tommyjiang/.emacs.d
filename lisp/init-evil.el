@@ -7,6 +7,7 @@
 (evil-set-initial-state 'ess-watch-mode 'emacs)
 (evil-set-initial-state 'text-mode 'insert)
 (evil-set-initial-state 'magit-popup-mode 'emacs)
+(evil-set-initial-state 'magit-popup-sequence-mode 'emacs)
 (evil-set-initial-state 'gnuplot-comint-mode 'emacs)
 
 (add-to-list 'auto-mode-alist '("\\.gnu\\'" . gnuplot-mode))
