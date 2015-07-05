@@ -17,8 +17,8 @@
 (define-key evil-normal-state-map (kbd "RET") 'org-return)
 
 ; Ace jump in evil mode
-(define-key evil-normal-state-map (kbd "SPC") 'ace-jump-line-mode)
-(define-key evil-normal-state-map (kbd "C-c SPC") 'ace-jump-char-mode)
+(define-key evil-normal-state-map (kbd "SPC") 'ace-jump-char-mode)
+(define-key evil-normal-state-map (kbd "C-c SPC") 'ace-jump-line-mode)
 
 ; Map "jj" to ESC (back to normal mode)
 (define-key evil-insert-state-map "j" #'cofi/maybe-exit)
