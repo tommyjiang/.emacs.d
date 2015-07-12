@@ -58,6 +58,9 @@
 (add-hook 'after-init-hook 'global-company-mode)
 (add-hook 'org-mode-hook 'company-mode)
 
+; LaTeX mode
+; (add-to-list 'auto-mode-alist '("\\.tex$" . LaTeX-mode))
+
 ; No scroll bar and no fringe
 (scroll-bar-mode -1)
 (set-fringe-mode 0)

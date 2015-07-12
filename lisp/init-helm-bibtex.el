@@ -1,11 +1,11 @@
 ; helm-bibtex
 ; Bib path
-(setq helm-bibtex-bibliography '("~/Documents/Work/Papers/MPC.bib"
-                                 "~/Documents/Work/Papers/Wind.bib"
+(setq helm-bibtex-bibliography '("~/Documents/Work/论文/MPC.bib"
+                                 "~/Documents/Work/论文/Wind.bib"
                                  "~/Documents/爱好/期刊/Common.bib"))
 
 ; PDF path
-(setq helm-bibtex-library-path '("~/Documents/Work/Papers/PDF/" 
+(setq helm-bibtex-library-path '("~/Documents/Work/论文/PDF/" 
                                  "~/Documents/爱好/期刊/Nature"))
 
 ; Note path
