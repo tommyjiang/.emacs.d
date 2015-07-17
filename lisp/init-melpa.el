@@ -112,16 +112,16 @@ _l_ log        _o_ clock out
 ; :back "^```$")))
 
 ; Markdown + HTML
-(mmm-add-classes
-'((markdown-HTML
-:submode js2-mode
-:face mmm-declaration-submode-face
-:front "^<!-- -->[\n\r]+"
-:back "^<!-- -->$")))
+; (mmm-add-classes
+; '((markdown-HTML
+; :submode js2-mode
+; :face mmm-declaration-submode-face
+; :front "^<!-- -->[\n\r]+"
+; :back "^<!-- end -->$")))
 
-(setq mmm-global-mode 't)
-(setq js2-strict-missing-semi-warning nil)
-(mmm-add-mode-ext-class 'markdown-mode nil 'markdown-HTML)
+; (setq mmm-global-mode 't)
+; (setq js2-strict-missing-semi-warning nil)
+; (mmm-add-mode-ext-class 'markdown-mode nil 'markdown-HTML)
 
 ; anzu mode
 (global-anzu-mode +1)
