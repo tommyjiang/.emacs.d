@@ -100,9 +100,9 @@ _l_ log        _o_ clock out
 
 (global-set-key (kbd "<f5>") 'hydra-global-org/body)
 
-; ; mmm mode
-; (require 'mmm-mode)
-; 
+; mmm mode
+(require 'mmm-mode)
+ 
 ; ; Markdown + TeX
 ; (mmm-add-classes
 ; '((markdown-TeX
@@ -110,9 +110,18 @@ _l_ log        _o_ clock out
 ; :face mmm-declaration-submode-face
 ; :front "^```TeX[\n\r]+"
 ; :back "^```$")))
-; 
-; (setq mmm-global-mode 't)
-; (mmm-add-mode-ext-class 'markdown-mode nil 'markdown-TeX)
+
+; Markdown + HTML
+(mmm-add-classes
+'((markdown-HTML
+:submode js2-mode
+:face mmm-declaration-submode-face
+:front "^<!-- -->[\n\r]+"
+:back "^<!-- -->$")))
+
+(setq mmm-global-mode 't)
+(setq js2-strict-missing-semi-warning nil)
+(mmm-add-mode-ext-class 'markdown-mode nil 'markdown-HTML)
 
 ; anzu mode
 (global-anzu-mode +1)
