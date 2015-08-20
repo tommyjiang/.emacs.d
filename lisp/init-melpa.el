@@ -130,5 +130,8 @@ _l_ log        _o_ clock out
 (global-set-key (kbd "C-x C-f") 'helm-find-files)
 (global-set-key (kbd "C-x b") 'helm-mini)
 
+; Magit push 
+(setq magit-push-always-verify nil)
+
 ;;
 (provide 'init-melpa)
