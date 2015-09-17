@@ -177,5 +177,8 @@
 
   (setq org-completion-handler 'org-helm-completion-handler))
 
+; Restore window after quitting the agenda
+(setq org-agenda-restore-windows-after-quit t)
+
 ;;
 (provide 'init-orgTommy)
