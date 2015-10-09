@@ -203,13 +203,13 @@
               (" " "Agenda"
                ((agenda "" nil)
                 (tags "REFILE"
-                      ((org-agenda-overriding-header "待处理任务")
+                      ((org-agenda-overriding-header "待归类任务")
                        (org-tags-match-list-sublevels nil)))
-                ; (tags-todo "-CANCELLED/!"
-                ;            ((org-agenda-overriding-header "Stuck Projects")
-                ;             (org-agenda-skip-function 'bh/skip-non-stuck-projects)
-                ;             (org-agenda-sorting-strategy
-                ;              '(category-keep))))
+                (tags-todo "-CANCELLED/!"
+                            ((org-agenda-overriding-header "待处理事项")
+                             (org-agenda-skip-function 'bh/skip-non-stuck-projects)
+                             (org-agenda-sorting-strategy
+                              '(category-keep))))
                 ; (tags-todo "-HOLD-CANCELLED/!"
                 ;            ((org-agenda-overriding-header "Projects")
                 ;             (org-agenda-skip-function 'bh/skip-non-projects)
@@ -251,7 +251,7 @@
                             (org-agenda-sorting-strategy
                              '(category-keep))))
                ; (tags-todo "-CANCELLED+WAITING|HOLD/!"
-               ;            ((org-agenda-overriding-header "Waiting and Postponed Tasks")
+               ;            ((org-agenda-overriding-header "等待他人完成事项")
                ;             (org-agenda-skip-function 'bh/skip-stuck-projects)
                ;             (org-tags-match-list-sublevels nil)
                ;             (org-agenda-todo-ignore-scheduled t)

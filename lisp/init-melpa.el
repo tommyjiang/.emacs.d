@@ -24,7 +24,7 @@
 ; (yas-global-mode 1)
 ; (setq yas-snippet-dirs "~/.emacs.d/elpa/yasnippet-0.9.0.1/snippets")
 
-;; ESS
+; ESS
 (load "ess-site")
 
 ; ESS will not print the evaluated commands, also speeds up the evaluation 
@@ -60,9 +60,9 @@
     (ess-fl-keyword:= . t)
     (ess-R-fl-keyword:F&T . t)))
 
-(add-hook 'ess-R-post-run-hook
-          (lambda () (set-buffer-process-coding-system
-                      'zh_CN.UTF-8 'zh_CN.UTF-8)))
+; (add-hook 'ess-R-post-run-hook
+;           (lambda () (set-buffer-process-coding-system
+;                       'zh_CN.UTF-8 'zh_CN.UTF-8)))
 
 ; Markdown mode
 (autoload 'markdown-mode "markdown-mode"
