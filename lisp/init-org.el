@@ -1,5 +1,5 @@
 ; Set org path
-(add-to-list 'load-path "~/.emacs.d/org-8.3.1/lisp")
+; (add-to-list 'load-path "~/.emacs.d/org-8.3.1/lisp")
 (add-to-list 'load-path "~/.emacs.d/contrib/lisp" t)
 
 ;;; Org Mode
