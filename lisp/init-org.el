@@ -210,35 +210,35 @@
                              (org-agenda-skip-function 'bh/skip-non-stuck-projects)
                              (org-agenda-sorting-strategy
                               '(category-keep))))
-                ; (tags-todo "-HOLD-CANCELLED/!"
-                ;            ((org-agenda-overriding-header "Projects")
-                ;             (org-agenda-skip-function 'bh/skip-non-projects)
-                ;             (org-tags-match-list-sublevels 'indented)
-                ;             (org-agenda-sorting-strategy
-                ;              '(category-keep))))
-                ; (tags-todo "-CANCELLED/!NEXT"
-                ;            ((org-agenda-overriding-header (concat "Project Next Tasks"
-                ;                                                   (if bh/hide-scheduled-and-waiting-next-tasks
-                ;                                                       ""
-                ;                                                     " (including WAITING and SCHEDULED tasks)")))
-                ;             (org-agenda-skip-function 'bh/skip-projects-and-habits-and-single-tasks)
-                ;             (org-tags-match-list-sublevels t)
-                ;             (org-agenda-todo-ignore-scheduled bh/hide-scheduled-and-waiting-next-tasks)
-                ;             (org-agenda-todo-ignore-deadlines bh/hide-scheduled-and-waiting-next-tasks)
-                ;             (org-agenda-todo-ignore-with-date bh/hide-scheduled-and-waiting-next-tasks)
-                ;             (org-agenda-sorting-strategy
-                ;              '(todo-state-down effort-up category-keep))))
-                ; (tags-todo "-REFILE-CANCELLED-WAITING-HOLD/!"
-                ;            ((org-agenda-overriding-header (concat "Project Subtasks"
-                ;                                                   (if bh/hide-scheduled-and-waiting-next-tasks
-                ;                                                       ""
-                ;                                                     " (including WAITING and SCHEDULED tasks)")))
-                ;             (org-agenda-skip-function 'bh/skip-non-project-tasks)
-                ;             (org-agenda-todo-ignore-scheduled bh/hide-scheduled-and-waiting-next-tasks)
-                ;             (org-agenda-todo-ignore-deadlines bh/hide-scheduled-and-waiting-next-tasks)
-                ;             (org-agenda-todo-ignore-with-date bh/hide-scheduled-and-waiting-next-tasks)
-                ;             (org-agenda-sorting-strategy
-                ;              '(category-keep))))
+                (tags-todo "-HOLD-CANCELLED/!"
+                           ((org-agenda-overriding-header "项目")
+                            (org-agenda-skip-function 'bh/skip-non-projects)
+                            (org-tags-match-list-sublevels 'indented)
+                            (org-agenda-sorting-strategy
+                             '(category-keep))))
+                (tags-todo "-CANCELLED/!NEXT"
+                           ((org-agenda-overriding-header (concat "项目下一事项"
+                                                                  (if bh/hide-scheduled-and-waiting-next-tasks
+                                                                      ""
+                                                                    " (including WAITING and SCHEDULED tasks)")))
+                            (org-agenda-skip-function 'bh/skip-projects-and-habits-and-single-tasks)
+                            (org-tags-match-list-sublevels t)
+                            (org-agenda-todo-ignore-scheduled bh/hide-scheduled-and-waiting-next-tasks)
+                            (org-agenda-todo-ignore-deadlines bh/hide-scheduled-and-waiting-next-tasks)
+                            (org-agenda-todo-ignore-with-date bh/hide-scheduled-and-waiting-next-tasks)
+                            (org-agenda-sorting-strategy
+                             '(todo-state-down effort-up category-keep))))
+                (tags-todo "-REFILE-CANCELLED-WAITING-HOLD/!"
+                           ((org-agenda-overriding-header (concat "项目子事项"
+                                                                  (if bh/hide-scheduled-and-waiting-next-tasks
+                                                                      ""
+                                                                    " (including WAITING and SCHEDULED tasks)")))
+                            (org-agenda-skip-function 'bh/skip-non-project-tasks)
+                            (org-agenda-todo-ignore-scheduled bh/hide-scheduled-and-waiting-next-tasks)
+                            (org-agenda-todo-ignore-deadlines bh/hide-scheduled-and-waiting-next-tasks)
+                            (org-agenda-todo-ignore-with-date bh/hide-scheduled-and-waiting-next-tasks)
+                            (org-agenda-sorting-strategy
+                             '(category-keep))))
                 (tags-todo "-REFILE-CANCELLED-WAITING-HOLD/!"
                            ((org-agenda-overriding-header (concat "待完成事项"
                                                                   (if bh/hide-scheduled-and-waiting-next-tasks
@@ -250,14 +250,14 @@
                             (org-agenda-todo-ignore-with-date bh/hide-scheduled-and-waiting-next-tasks)
                             (org-agenda-sorting-strategy
                              '(category-keep))))
-               ; (tags-todo "-CANCELLED+WAITING|HOLD/!"
-               ;            ((org-agenda-overriding-header "等待他人完成事项")
-               ;             (org-agenda-skip-function 'bh/skip-stuck-projects)
-               ;             (org-tags-match-list-sublevels nil)
-               ;             (org-agenda-todo-ignore-scheduled t)
-               ;             (org-agenda-todo-ignore-deadlines t)))
+               (tags-todo "-CANCELLED+WAITING|HOLD/!"
+                          ((org-agenda-overriding-header "等待他人完成事项")
+                           (org-agenda-skip-function 'bh/skip-stuck-projects)
+                           (org-tags-match-list-sublevels nil)
+                           (org-agenda-todo-ignore-scheduled t)
+                           (org-agenda-todo-ignore-deadlines t)))
                ; (tags "-REFILE/"
-               ;       ((org-agenda-overriding-header "Tasks to Archive")
+               ;       ((org-agenda-overriding-header "待归档任务")
                ;        (org-agenda-skip-function 'bh/skip-non-archivable-tasks)
                ;        (org-tags-match-list-sublevels nil)))
                 )
