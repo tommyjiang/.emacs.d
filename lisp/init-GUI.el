@@ -1,10 +1,6 @@
-; Set default Font
-(set-face-attribute
-'default nil :font "Yahei Consolas Hybrid 20")
 ; Set fonts
-(when *is-mac*
-  (set-face-attribute
-    'default nil :font "Inconsolata 24"))
+(set-face-attribute
+  'default nil :font "Inconsolata 24")
 
 (dolist (charset '(kana han symbol cjk-misc bopomofo))
   (set-fontset-font (frame-parameter nil 'font)
