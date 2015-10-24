@@ -133,5 +133,9 @@ _l_ log        _o_ clock out
 ; Magit push 
 (setq magit-push-always-verify nil)
 
+; Set env the same as OS X
+(when (memq window-system '(mac ns))
+  (exec-path-from-shell-initialize))
+
 ;;
 (provide 'init-melpa)

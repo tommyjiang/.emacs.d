@@ -75,7 +75,7 @@
 
 ; Set enviroment variables
 (setenv "HOME" "/Users/tommy")
-(setenv "PATH" "/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin:/usr/texbin:/usr/texbin:/usr/local/texlive/2015/bin/x86_64-darwin")
+(setenv "PATH" "/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin:/Library/TeX/texbin")
 
 ; set the default file path
 (setq default-directory "~/")
