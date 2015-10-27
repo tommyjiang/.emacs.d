@@ -137,5 +137,8 @@ _l_ log        _o_ clock out
 (when (memq window-system '(mac ns))
   (exec-path-from-shell-initialize))
 
+; Swiper
+(global-set-key (kbd "C-s") 'swiper)
+
 ;;
 (provide 'init-melpa)
